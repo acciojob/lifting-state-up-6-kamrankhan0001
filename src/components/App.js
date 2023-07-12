@@ -30,7 +30,7 @@ const Child = ({ todos, handleComplete }) => {
   return (
     <div className="child">
       <h1>Parent Component</h1>
-       <h3>Child Component</h3>
+       <h2>Child Component</h2>
       <ul>
         {todos.map((todo) => (
           <li key={todo.id}>
