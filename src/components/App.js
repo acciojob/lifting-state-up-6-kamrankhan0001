@@ -5,8 +5,8 @@ import './../styles/App.css';
 const Parent = () => {
   const [todos, setTodos] = useState([
     { id: 1, text: 'Learn React', completed: false },
-    { id: 2, text: 'Build a project', completed: false },
-    { id: 3, text: 'Write documentation', completed: false }
+    { id: 2, text: 'Build a React app', completed: false },
+    { id: 3, text: 'Deploy the React app', completed: false }
   ]);
 
   const handleComplete = (id) => {
@@ -29,6 +29,8 @@ const Parent = () => {
 const Child = ({ todos, handleComplete }) => {
   return (
     <div className="child">
+      <h1>Parent Component</h1>
+       <h3>Child Component</h3>
       <ul>
         {todos.map((todo) => (
           <li key={todo.id}>
